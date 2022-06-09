@@ -81,7 +81,7 @@ Route::group(['middleware'=>'auth'], function(){
         Route::delete('/table/delete/{id}',[AdminTableController::class, 'delete'])->name('table.delete');
         //email
         Route::get('invite', [SendMailController::class, 'show'] )->name('invite');
-        Route::post('invite', [SendMailController::class, 'invite'] )->name('invite');
+        Route::post('invite', [SendMailController::class, 'invite'] );
         //dashboard updates
         Route::get('/new', [UpdateController::class, 'new'] )->name('updates.new');
         Route::get('updates', [UpdateController::class,'index'] )->name('updates');
