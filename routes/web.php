@@ -27,6 +27,8 @@ use App\Http\Controllers\Admin\AdminCreateTaskController;
 use App\Http\Controllers\admin\AdminEnterpriseController;
 use App\Http\Controllers\Auth\RegisterCoworkerController;
 
+
+
 //Diese Route leitet nach login entweder zum user oder admin dashboard
 Route::get('/', function () {
     if(!auth()->user()){
